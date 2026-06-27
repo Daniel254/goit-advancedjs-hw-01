@@ -4,7 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command, mode }) => {
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
